@@ -1,56 +1,82 @@
-import { MapPin, Heart, Sparkles } from 'lucide-react';
+import { Award, Clock, Shield } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-800 via-indigo-900 to-purple-950"></div>
-      <div className="absolute top-20 right-20 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-20 w-64 h-64 bg-indigo-500/20 rounded-full blur-3xl"></div>
-
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Support Local. Order Direct.
-            </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-purple-400 via-purple-500 to-indigo-500 mx-auto mb-8"></div>
-          </div>
-
-          <div className="bg-gradient-to-br from-purple-900/40 via-indigo-900/40 to-purple-800/40 border-2 border-purple-500/30 rounded-3xl p-8 md:p-12 backdrop-blur-md shadow-2xl shadow-purple-900/50">
-            <div className="space-y-6 text-purple-100 text-lg leading-relaxed">
-              <div className="flex items-start space-x-4">
-                <MapPin className="text-purple-300 flex-shrink-0 mt-1" size={28} />
-                <p>
-                  Enjoy the best Cafe in Queens. We're located at <span className="text-white">1818 College Point Blvd, Queens, NY 11356, USA</span> and deliver up to 5 miles from our location.
-                </p>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <Sparkles className="text-indigo-300 flex-shrink-0 mt-1" size={28} />
-                <p>
-                  Order here directly through our official website.
-                </p>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <Heart className="text-purple-400 flex-shrink-0 mt-1" size={28} />
-                <p>
-                  Thanks for supporting local restaurants by ordering direct and not through 3rd party platforms!
-                </p>
-              </div>
-
-              <p className="text-center pt-6 text-xl text-purple-200 font-semibold">
-                Feel free to make a pickup order as well!
-              </p>
+    <section id="about" className="py-24 relative bg-white">
+      <div className="container mx-auto px-6">
+        <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+          <div>
+            <div className="mb-6">
+              <p className="text-blue-600 font-semibold mb-2 tracking-wider">Experience A Better Way To Build</p>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                ABOUT
+              </h2>
+              <div className="w-20 h-1 bg-yellow-400"></div>
             </div>
 
-            <div className="mt-10 text-center">
-              <a
-                href="#order"
-                className="inline-block bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold px-10 py-5 rounded-full transition-all shadow-xl shadow-purple-500/50 transform hover:scale-105"
-              >
-                Order Delivery & Pickup
-              </a>
+            <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+              <p>
+                Golden Key Construction Group is a <strong>Residential, Commercial Roofing -Siding & Construction</strong> Company with 2 Locations: Staten Island & New Jersey.
+              </p>
+
+              <p>
+                We have founded our group on the principles of integrity, goodwill and reliability.
+              </p>
+
+              <p>
+                We rely highly on customer's experience and feedback. Our passion and core aim is to provide excellence and timely services.
+              </p>
+
+              <p>
+                Our customized services run the spectrum, from pre-construction and construction project managements, to design/build construction and post-construction services. We work closely with our customers to ensure the projects envision their expectancies within the desired timeframe.
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="relative h-[600px] rounded-lg overflow-hidden shadow-2xl"
+            style={{
+              backgroundImage: 'url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent"></div>
+          </div>
+        </div>
+
+        <div className="mt-20 bg-yellow-400 py-12">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Award className="text-blue-900" size={40} />
+                </div>
+                <h3 className="text-2xl font-bold text-blue-900 mb-3">Experienced Staff</h3>
+                <p className="text-blue-900">
+                  We have been in this business for 25 years and our philosophy is to give our customers the best service, that's why our reviews
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Shield className="text-blue-900" size={40} />
+                </div>
+                <h3 className="text-2xl font-bold text-blue-900 mb-3">GAF Master Elite®</h3>
+                <p className="text-blue-900">
+                  We give our customers 50 years warranty on Material and 25 Years on Workmanship.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Clock className="text-blue-900" size={40} />
+                </div>
+                <h3 className="text-2xl font-bold text-blue-900 mb-3">Quick Response</h3>
+                <p className="text-blue-900">
+                  24/7 Service! We offer our 24 Hour Emergency Roof Repair Response Program. You can just call us at (929) 564-4310 We will be available immediately!
+                </p>
+              </div>
             </div>
           </div>
         </div>

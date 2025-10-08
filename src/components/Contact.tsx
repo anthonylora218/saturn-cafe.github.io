@@ -1,89 +1,62 @@
-import { MapPin, Clock, Phone, Instagram } from 'lucide-react';
+import { MapPin, Phone } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-950 via-indigo-950 to-black"></div>
-      <div className="absolute top-0 left-0 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl"></div>
-
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="contact" className="py-24 relative bg-white">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Contact Us
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Contact
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-purple-400 via-purple-500 to-indigo-500 mx-auto"></div>
+          <div className="w-20 h-1 bg-yellow-400 mx-auto"></div>
         </div>
 
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 mb-12">
             <div className="space-y-8">
-              <div className="bg-gradient-to-br from-purple-900/40 via-indigo-900/40 to-purple-800/40 border-2 border-purple-500/30 rounded-2xl p-6 backdrop-blur-md shadow-xl shadow-purple-900/30">
+              <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-6 shadow-lg">
                 <div className="flex items-start space-x-4">
-                  <Clock className="text-purple-300 flex-shrink-0" size={28} />
+                  <Phone className="text-blue-600 flex-shrink-0" size={28} />
                   <div>
-                    <h3 className="text-white text-lg font-bold mb-3">Opening Hours</h3>
-                    <div className="space-y-1 text-purple-100">
-                      <p>Monday-Friday: 8AM-5PM</p>
-                      <p>Saturday: 9AM-5PM</p>
-                      <p>Sunday: 9AM-4PM</p>
+                    <h3 className="text-gray-900 text-lg font-bold mb-3">Phone</h3>
+                    <a href="tel:+19295644310" className="text-blue-600 hover:text-blue-700 text-xl font-semibold">
+                      +1 (929) 564-4310
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-6 shadow-lg">
+                <div className="flex items-start space-x-4">
+                  <MapPin className="text-blue-600 flex-shrink-0" size={28} />
+                  <div>
+                    <h3 className="text-gray-900 text-lg font-bold mb-3">Locations</h3>
+                    <div className="space-y-2 text-gray-700">
+                      <p className="font-semibold">Staten Island & New Jersey</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-purple-900/40 via-indigo-900/40 to-purple-800/40 border-2 border-purple-500/30 rounded-2xl p-6 backdrop-blur-md shadow-xl shadow-purple-900/30">
-                <div className="flex items-start space-x-4">
-                  <MapPin className="text-indigo-300 flex-shrink-0" size={28} />
-                  <div>
-                    <h3 className="text-white text-lg font-bold mb-3">Address</h3>
-                    <p className="text-purple-100">
-                      1818 College Point Blvd<br />
-                      Queens, NY 11356, USA
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-purple-900/40 via-indigo-900/40 to-purple-800/40 border-2 border-purple-500/30 rounded-2xl p-6 backdrop-blur-md shadow-xl shadow-purple-900/30">
-                <div className="flex items-start space-x-4">
-                  <Phone className="text-purple-300 flex-shrink-0" size={28} />
-                  <div>
-                    <h3 className="text-white text-lg font-bold mb-3">Phone</h3>
-                    <p className="text-purple-100">(929) 822-5614</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-purple-900/40 via-indigo-900/40 to-purple-800/40 border-2 border-purple-500/30 rounded-2xl p-6 backdrop-blur-md shadow-xl shadow-purple-900/30">
-                <div className="flex items-start space-x-4">
-                  <Instagram className="text-indigo-300 flex-shrink-0" size={28} />
-                  <div>
-                    <h3 className="text-white text-lg font-bold mb-3">We're on Social Media</h3>
-                    <a
-                      href="https://instagram.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-300 hover:text-purple-200 transition-colors font-medium"
-                    >
-                      Follow us on Instagram
-                    </a>
-                  </div>
-                </div>
+              <div className="bg-gradient-to-r from-blue-900 to-blue-800 rounded-lg p-8 shadow-xl text-white">
+                <h3 className="text-2xl font-bold mb-4">24/7 Emergency Service</h3>
+                <p className="mb-6 leading-relaxed">
+                  We offer our 24 Hour Emergency Roof Repair Response Program. Call us anytime - we will be available immediately!
+                </p>
+                <a
+                  href="tel:+19295644310"
+                  className="inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold px-8 py-3 rounded transition-all"
+                >
+                  Call Now
+                </a>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-900/20 to-blue-900/10 border border-purple-500/20 rounded-2xl overflow-hidden backdrop-blur-sm h-[600px]">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8834!2d-73.8465!3d40.7855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ3JzA3LjgiTiA3M8KwNTAnNDcuNCJX!5e0!3m2!1sen!2sus!4v1234567890"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="House of Saturn Location"
-              ></iframe>
+            <div className="bg-gray-100 rounded-lg overflow-hidden shadow-xl h-[600px] flex items-center justify-center">
+              <div className="text-center text-gray-500 p-8">
+                <MapPin size={64} className="mx-auto mb-4 text-blue-600" />
+                <p className="text-lg">Serving Staten Island & New Jersey</p>
+              </div>
             </div>
           </div>
         </div>
